@@ -3,48 +3,65 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mimi HSK 5 — Luyện thi HSK 5</title>
+<title>HSK5 Corner</title>
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=Noto+Sans+SC:wght@500;700&display=swap" rel="stylesheet">
 <style>
-:root{--p:#ff4d6d;--soft:#fff0f3;--line:#ffd0da;--ink:#2b2d42;--mute:#8d8fa3;--ok:#18a07a;--bad:#e5384f}
+:root{--p:#d98fa3;--p2:#b76e84;--soft:#f9e8ed;--line:#eadbe0;--ink:#4a3f47;--mute:#8b8189;--ok:#5a9e8a;--bad:#c9697b;--g1:#e9c3cf;--g2:#c9a0b0;--g3:#9a8c94}
 *{box-sizing:border-box}
-body{margin:0;min-height:100vh;background:linear-gradient(#fff5f7,#ffe6ec);color:var(--ink);font:500 16px/1.6 "Plus Jakarta Sans","Noto Sans SC",system-ui,sans-serif}
+body{margin:0;min-height:100vh;background:linear-gradient(160deg,#f7f0f2,#ece3e7);color:var(--ink);font:500 16px/1.6 "Plus Jakarta Sans","Noto Sans SC",system-ui,sans-serif}
 .zh,b.zh{font-family:"Noto Sans SC","Plus Jakarta Sans",sans-serif}
-button{font:inherit;color:inherit;cursor:pointer}
-button[hidden]{display:none}
-.top{display:flex;align-items:center;gap:12px;padding:14px 20px;border-bottom:1px solid var(--line);background:rgba(255,255,255,.7);backdrop-filter:blur(6px);position:sticky;top:0;z-index:5}
-.logo{width:48px;height:48px;border-radius:14px;background:linear-gradient(135deg,#ff4d6d,#ff758f);display:grid;place-items:center;font-size:24px;box-shadow:0 4px 12px #ff4d6d44}
-.top h1{margin:0;font-size:1.7rem;font-weight:800}.top h1 span{color:var(--p)}
-main{max-width:760px;margin:0 auto;padding:22px 16px 60px}
-.card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:22px;box-shadow:0 6px 24px #ff4d6d14}
+button{font:inherit;color:inherit;cursor:pointer}button[hidden]{display:none}
+.top{display:flex;align-items:center;gap:18px;padding:12px 22px;background:rgba(255,255,255,.85);border-bottom:3px solid #eed9e0;position:sticky;top:0;z-index:5;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px}.brand img{width:44px;height:44px;border-radius:12px}
+.brand b{display:block;font-size:1.25rem;font-weight:800;line-height:1.2;color:var(--p2)}.brand small{color:var(--mute);font-size:.78rem}
+#nav{display:flex;gap:6px;flex-wrap:wrap}
+#nav button{padding:9px 16px;border:0;border-radius:999px;background:transparent;font-weight:700;color:var(--ink)}
+#nav button:hover{background:var(--soft)}
+#nav button.on{background:var(--p);color:#fff;box-shadow:0 3px 0 var(--p2)}
+main{max-width:1100px;margin:0 auto;padding:24px 16px 60px}
+.card{background:#fff;border:1px solid var(--line);border-radius:26px;padding:22px;box-shadow:0 6px 22px #b76e8414}
+.hero{display:flex;gap:24px;align-items:center;justify-content:space-between;flex-wrap:wrap;background:linear-gradient(135deg,#f4e4ea,#e9e4ee);border:3px solid #fff;border-radius:30px;padding:30px}
+.hero h2{font-size:2.3rem;line-height:1.2;margin:0 0 10px;font-weight:800;color:#5a3f4c}.hero h2 span{color:var(--p2)}
+.hero p{margin:0 0 18px;color:#6f6068;max-width:420px}
+.bub{background:#fff;border:2px solid var(--line);border-radius:999px;padding:8px 18px;font-weight:700;text-align:center;margin-bottom:12px}
+.stack{text-align:center}.stack div{margin:0 auto 6px;padding:10px 0;border-radius:8px;color:#fff;font-weight:800;letter-spacing:.06em}
+.stack svg{width:84px;height:84px;display:block;margin:6px auto}
+.pri{padding:12px 26px;border:0;border-radius:999px;background:var(--p);color:#fff;font-weight:700;box-shadow:0 4px 0 var(--p2)}
+.pri:disabled{opacity:.4;box-shadow:none;cursor:default}
+.sec{padding:11px 20px;border:1.5px solid var(--line);border-radius:999px;background:#fff;font-weight:700}
+.feats{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:16px;margin:22px 0}
+.feat{text-align:center;padding:22px 16px}.feat .ic{width:64px;height:64px;border-radius:50%;margin:0 auto 10px;display:grid;place-items:center;font-size:28px;background:var(--soft)}
+.feat h3{margin:4px 0;color:#5a3f4c}.feat p{margin:0 0 12px;color:var(--mute);font-size:.92rem}
 .corner{display:flex;gap:18px;align-items:center}
-.av{width:84px;height:84px;border-radius:22px;background:var(--soft);border:3px solid #fff;box-shadow:0 0 0 1px var(--line);display:grid;place-items:center;font-size:46px;flex:none}
-.corner>div:last-child{flex:1}
-.corner h2{margin:0 0 6px;font-size:1.5rem;font-weight:800}
+.av{width:78px;height:78px;border-radius:22px;background:var(--soft);display:grid;place-items:center;font-size:42px;flex:none}
+.corner>div:last-child{flex:1}.corner h2{margin:0 0 6px;font-size:1.4rem;font-weight:800}
 .lv{display:flex;justify-content:space-between;font-size:.85rem;font-weight:700}
-.bar{height:12px;background:#ececf1;border-radius:8px;overflow:hidden;margin-top:6px}
-.bar i{display:block;height:100%;border-radius:8px;background:linear-gradient(90deg,#ff4d6d,#ffb830);transition:width .4s}
-.quote{margin-top:18px;display:flex;gap:14px;align-items:center;border:1.5px dashed var(--line);background:#fff8f9;border-radius:16px;padding:16px}
-.quote div{flex:1}.quote b{display:block;font-size:1.02rem;font-weight:800}.quote small{color:var(--mute);font-weight:700}
-.quote button{flex:none;width:44px;height:44px;border:0;border-radius:12px;background:#ffe3e9;color:var(--p);font-size:1.3rem}
-.tabs{display:flex;gap:8px;margin:20px 0 6px}
-.tabs button{flex:1;padding:11px 8px;border-radius:999px;border:1.5px solid var(--line);background:#fff;font-weight:700}
-.tabs button.on{background:linear-gradient(135deg,#ff4d6d,#ff758f);border-color:transparent;color:#fff;box-shadow:0 4px 12px #ff4d6d44}
-h3.st{margin:18px 4px 8px;color:var(--p);font-size:.95rem}
-.item{width:100%;display:flex;gap:12px;align-items:center;text-align:left;background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px 16px;margin-bottom:10px;transition:transform .12s,box-shadow .12s}
-.item:hover{transform:translateY(-2px);box-shadow:0 6px 16px #ff4d6d22}
-.item .t{flex:1;font-weight:700}.item small{color:var(--mute);font-weight:700}
-.ico{width:34px;height:34px;border-radius:10px;background:var(--soft);display:grid;place-items:center;flex:none}
-.ghost{border:0;background:none;color:var(--p);font-weight:700;padding:4px 0;margin-bottom:12px}
+.bar{height:12px;background:#ece6e9;border-radius:8px;overflow:hidden;margin-top:6px}
+.bar i{display:block;height:100%;border-radius:8px;background:linear-gradient(90deg,#d98fa3,#e8c9a8);transition:width .4s}
+.quote{margin-top:16px;display:flex;gap:14px;align-items:center;border:1.5px dashed var(--line);background:#fcf6f8;border-radius:16px;padding:14px}
+.quote div{flex:1}.quote b{display:block;font-weight:800}.quote small{color:var(--mute);font-weight:700}
+.quote button{flex:none;width:42px;height:42px;border:0;border-radius:12px;background:var(--soft);color:var(--p2);font-size:1.2rem}
+h2.pg{margin:0 0 4px;color:#5a3f4c}p.sub{margin:0 0 16px;color:var(--mute)}
+.levels{display:grid;grid-template-columns:repeat(4,minmax(230px,1fr));gap:14px;overflow-x:auto;padding-bottom:8px}
+.lvcol{background:#fff;border:1px solid var(--line);border-radius:22px;padding:14px}
+.lvcol h3{margin:2px 4px 10px;font-size:.95rem;color:#fff;background:var(--c);border-radius:12px;padding:8px 12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
+.item{width:100%;display:flex;gap:10px;align-items:center;text-align:left;background:#fff;border:1px solid var(--line);border-radius:16px;padding:12px 14px;margin-bottom:8px;transition:transform .12s,box-shadow .12s}
+.grid .item{margin:0;align-items:flex-start}
+.item:hover{transform:translateY(-2px);box-shadow:0 6px 16px #b76e8422}
+.item .t{flex:1;font-weight:700;line-height:1.35}.item .t small{display:block;color:var(--mute);font-weight:500}.item>small{color:var(--mute);font-weight:700}
+.ico{width:32px;height:32px;border-radius:10px;background:var(--soft);display:grid;place-items:center;flex:none}
+.ghost{border:0;background:none;color:var(--p2);font-weight:700;padding:4px 0;margin-bottom:12px}
+.wrap{max-width:760px;margin:0 auto}
 .meta{display:flex;justify-content:space-between;font-weight:800;margin-bottom:4px}.meta span{color:var(--mute);font-size:.9rem}
-.card h3{margin:16px 0 6px;color:var(--p)}
+.card h3{margin:16px 0 6px;color:var(--p2)}
 .pat{font:700 1.3rem "Noto Sans SC",sans-serif;background:var(--soft);border-radius:14px;padding:14px 16px}
 .ex{background:var(--soft);border-left:5px solid var(--p);border-radius:10px;padding:12px 16px}
 .ex .zh{font-size:1.45rem}.ex small{display:block;color:var(--mute)}
 ul{padding-left:20px}li{margin-bottom:6px}
-table{width:100%;border-collapse:collapse}td{padding:8px 6px;border-bottom:1px solid var(--line)}td:first-child{font:700 1.3rem "Noto Sans SC",sans-serif}td:nth-child(2){color:var(--p);font-weight:700}
+table{width:100%;border-collapse:collapse}td{padding:7px 6px;border-bottom:1px solid var(--line);vertical-align:top}td:first-child{font:700 1.25rem "Noto Sans SC",sans-serif;white-space:nowrap}td:nth-child(2){color:var(--p2);font-weight:700;white-space:nowrap}td:nth-child(3){font-size:.9rem;color:var(--mute)}
 .pass{background:var(--soft);border-radius:14px;padding:14px 16px;font:500 1.1rem/1.9 "Noto Sans SC",sans-serif;margin:10px 0}
 .q{font-size:1.1rem;font-weight:700;margin:14px 0 12px}
 .o{display:block;width:100%;text-align:left;margin-bottom:8px;padding:12px 16px;border:1.5px solid var(--line);border-radius:14px;background:#fff}
@@ -54,43 +71,28 @@ table{width:100%;border-collapse:collapse}td{padding:8px 6px;border-bottom:1px s
 .ans{min-height:56px;border:2px dashed var(--line);border-radius:14px;padding:8px;margin-bottom:10px;display:flex;flex-wrap:wrap;gap:8px}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
 .chips button,.ans button{padding:6px 14px;border:1.5px solid var(--line);border-radius:999px;background:#fff;font-size:1.2rem}
-.pri{padding:11px 22px;border:0;border-radius:999px;background:linear-gradient(135deg,#ff4d6d,#ff758f);color:#fff;font-weight:700;box-shadow:0 4px 12px #ff4d6d44}
-.pri:disabled{opacity:.4;box-shadow:none;cursor:default}
-.sec{padding:11px 20px;border:1.5px solid var(--line);border-radius:999px;background:#fff;font-weight:700}
-.fb{min-height:1.6em;margin:10px 0 0;font-weight:700}
-.lock{pointer-events:none}
+.fb{min-height:1.6em;margin:10px 0 0;font-weight:700}.lock{pointer-events:none}
 .nav{display:flex;justify-content:flex-end;margin-top:20px;gap:10px}.nav #pv{margin-right:auto}
 .big{font-size:3rem;text-align:center;margin:10px 0 0}.score{text-align:center;font-size:1.4rem;font-weight:800}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-bottom:16px}.stats .card{text-align:center}.stats b{display:block;font-size:1.8rem;color:var(--p2)}
 footer{margin-top:26px;font-size:.85rem;color:var(--mute);text-align:center}
-@media(max-width:520px){.av{width:68px;height:68px;font-size:36px}.corner h2{font-size:1.2rem}.top h1{font-size:1.4rem}}
+@media(max-width:600px){.hero h2{font-size:1.7rem}.levels{grid-template-columns:repeat(4,80%)}}
 </style>
 </head>
 <body>
-<div class="top"><div class="logo">🌸</div><h1>Mimi <span>HSK 5</span></h1></div>
-<main>
-<div class="card">
-  <div class="corner">
-    <div class="av" id="av">🥚</div>
-    <div><h2>Góc học của bạn</h2>
-      <div class="lv"><span id="lv"></span><span id="xp"></span></div>
-      <div class="bar"><i id="xpbar" style="width:0"></i></div></div>
-  </div>
-  <div class="quote"><span>💬</span><div><b id="qt"></b><small id="qa"></small></div><button id="qn" type="button" aria-label="Câu khác">↻</button></div>
-</div>
-<div class="tabs" id="tabs"></div>
-<div id="view"></div>
-<footer>Mỗi câu đúng lần đầu được 1 điểm. Cứ 20 điểm là lên 1 cấp. Tiến độ được lưu trên trình duyệt của bạn.</footer>
-</main>
+<div class="top"><div class="brand"><img src="favicon.svg" alt=""><div><b>HSK5 Corner</b><small>Học · Luyện · Tiến bộ</small></div></div><nav id="nav"></nav></div>
+<main><div id="view"></div>
+<footer>Mỗi câu đúng ở lần thử đầu được 1 điểm, đủ 20 điểm thì lên 1 cấp. Tiến độ được lưu trên trình duyệt của bạn.</footer></main>
 <script src="grammar.js"></script>
 <script src="exercises.js"></script>
 <script src="vocab.js"></script>
 <script src="reading.js"></script>
 <script>
-const D=window.D,V=window.V,R=window.R,EXR=window.EX;
+const D=window.D,U=window.U,R=window.R,EXR=window.EX;
 const STAGES=["Nền tảng · HSK 1–2","Sơ trung cấp · HSK 3","Trung cấp · HSK 4","Nâng cao · HSK 5"];
 const QUOTES=[["Một ngôn ngữ khác là một cách nhìn cuộc sống khác.","Federico Fellini"],["学而时习之，不亦说乎？ (Học rồi thường xuyên ôn tập, chẳng vui sao?)","Khổng Tử"],["千里之行，始于足下。 (Hành trình ngàn dặm bắt đầu từ một bước chân.)","Lão Tử"],["不积跬步，无以至千里。 (Không tích từng bước nhỏ thì không thể đi ngàn dặm.)","Tuân Tử"]];
-const KEY="mimi-hsk5";
-let st={sc:{},fin:{}},tab="g",cur=null,step=0,res=[],cache={},qi=0;
+const KEY="hsk5-corner";
+let st={sc:{},fin:{}},tab="h",cur=null,step=0,res=[],cache={},qi=0;
 try{st=JSON.parse(localStorage.getItem(KEY))||st}catch(e){}
 const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(st))}catch(e){}};
 const $=i=>document.getElementById(i);
@@ -101,6 +103,7 @@ const norm=s=>s.replace(PUN,"");
 
 // ---------- Góc học ----------
 function corner(){
+  if(!$("av"))return;
   const xp=Object.keys(st.sc).length,lv=1+Math.floor(xp/20),r=xp%20;
   $("av").textContent=["🥚","🐣","🐥","🐤","🐓","🦚"][Math.min(lv-1,5)];
   $("lv").textContent="Lv."+lv;$("xp").textContent=r+"/20 điểm";
@@ -129,12 +132,15 @@ function gq(k){
   return [e[0],a[0],e[1],a[1],e[2],a[2],e[3],a[3],e[4],a[4],a[5],a[6],a[7],a[8],a[9]];
 }
 function vq(k){
-  const all=V.flatMap(s=>s[1]),w=sh(V[k][1]),L=[];
-  w.slice(0,5).forEach(x=>L.push(mc("<b class='zh' style='font-size:1.4rem'>"+x[0]+"</b> nghĩa là gì?",x[2],all.map(y=>y[2]))));
-  w.slice(5,9).forEach(x=>L.push(mc("Từ nào có nghĩa “"+x[2]+"”?",x[0],all.map(y=>y[0]))));
-  [w[9],w[0],w[1]].forEach(x=>L.push(mc("Chọn pinyin đúng của <b class='zh'>"+x[0]+"</b>",x[1],all.map(y=>y[1]))));
-  [w[2],w[3],w[4]].forEach(x=>L.push(["f","Gõ chữ Hán: <b>"+x[1]+"</b> ("+x[2]+")",x[0]]));
-  return sh(L);
+  const all=U.flatMap(s=>s.w),ws=sh(U[k].w),L=[];
+  for(let i=0;i<15;i++){
+    const x=ws[i%ws.length],t=i%5;
+    if(t==0||t==3)L.push(mc("<b class='zh' style='font-size:1.4rem'>"+x[0]+"</b> nghĩa là gì?",x[2],all.map(y=>y[2])));
+    else if(t==1)L.push(mc("Từ nào có nghĩa: “"+x[2]+"”?",x[0],all.map(y=>y[0])));
+    else if(t==2)L.push(mc("Chọn pinyin đúng của <b class='zh'>"+x[0]+"</b>",x[1],all.map(y=>y[1])));
+    else L.push(["f","Gõ chữ Hán: <b>"+x[1]+"</b><br><small>("+x[2]+")</small>",x[0]]);
+  }
+  return L;
 }
 function unit(id){
   if(cache[id])return cache[id];
@@ -143,32 +149,50 @@ function unit(id){
     `<h3>Cấu trúc</h3><div class="pat">${d[2]}</div>`,
     `<h3>Cách dùng</h3><ul>${d[3].split(/(?<=\.)\s+/).map(s=>`<li>${s}</li>`).join("")}</ul>`,
     `<h3>Ví dụ</h3><div class="ex"><div class="zh">${d[4]}</div><small>${d[5]}</small><small>${d[6]}</small></div>`],qs:gq(k)}}
-  else if(t=="v"){u={title:"Từ vựng "+(k+1)+" · "+V[k][0],pages:[`<h3>10 từ cần nhớ</h3><table>${V[k][1].map(w=>`<tr><td>${w[0]}</td><td>${w[1]}</td><td>${w[2]}</td></tr>`).join("")}</table>`],qs:vq(k)}}
-  else{const r=R[k];u={title:r.title,pages:[`<h3>Đọc đoạn văn</h3><div class="pass">${r.zh}</div>`],ctx:`<details><summary>Xem lại đoạn văn</summary><div class="pass">${r.zh}</div></details>`,after:`<h3>Tóm tắt tiếng Việt</h3><p>${r.vi}</p>`,qs:r.q.map(q=>["c",q[0],q[1],q[2]])}}
+  else if(t=="v"){const w=U[k];u={title:vt(w),pages:[`<h3>${w.w.length} từ trong bài</h3><table>${w.w.map(x=>`<tr><td>${x[0]}</td><td>${x[1]}</td><td>${x[2]}</td></tr>`).join("")}</table>`],qs:vq(k)}}
+  else{const r=R[k];u={title:r[0]+" · "+r[1],pages:[],qs:r[2].map(p=>["c",p[1],p[2],p[3],p[0]])}}
   return cache[id]=u;
 }
+const vt=w=>w.n?"Bài "+w.n+" · "+w.zh:"Từ bổ sung · chưa xếp bài";
 
-// ---------- Danh sách ----------
-const ids=t=>t=="g"?D.map((_,k)=>"g"+k):t=="v"?V.map((_,k)=>"v"+k):R.map((_,k)=>"r"+k);
+const NAV=[["h","🏠 Trang chủ"],["v","🍓 Từ vựng"],["g","🧩 Ngữ pháp"],["r","📖 Đọc hiểu"],["p","🌱 Tiến độ"]];
 function render(){
-  corner();
-  $("tabs").hidden=cur!=null;
-  $("tabs").innerHTML=[["g","📘 Ngữ pháp"],["v","🍓 Từ vựng"],["r","📖 Đọc hiểu"]].map(t=>`<button class="${tab==t[0]?"on":""}" data-t="${t[0]}">${t[1]}</button>`).join("");
-  document.querySelectorAll("#tabs button").forEach(b=>b.onclick=()=>{tab=b.dataset.t;render()});
-  cur==null?list():lesson();
+  $("nav").innerHTML=NAV.map(t=>`<button class="${tab==t[0]?"on":""}" data-t="${t[0]}">${t[1]}</button>`).join("");
+  document.querySelectorAll("#nav button").forEach(b=>b.onclick=()=>{tab=b.dataset.t;cur=null;render()});
+  if(cur!=null)lesson();else{({h:home,v:vocab,g:gram,r:reading,p:prog})[tab]()}
+  if(tab=="h"&&cur==null){corner();quote();$("qn").onclick=quote}
+  document.querySelectorAll(".item").forEach(b=>b.onclick=()=>{cur=b.dataset.id;step=0;res=[];render()});
+  document.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>{tab=b.dataset.go;cur=null;render()});
   window.scrollTo(0,0);
 }
-function item(id,title,n){
+function item(id,title,sub,n){
   const f=st.fin[id];
-  return `<button class="item" data-id="${id}"><span class="ico">${f>=12?"⭐":f!=null?"🌷":"🌸"}</span><span class="t">${title}</span><small>${f!=null?f+"/"+n:""}</small></button>`;
+  return `<button class="item" data-id="${id}"><span class="ico">${f>=Math.ceil(n*.8)?"⭐":f!=null?"🌷":"☁️"}</span><span class="t">${title}${sub?`<small>${sub}</small>`:""}</span><small>${f!=null?f+"/"+n:""}</small></button>`;
 }
-function list(){
-  let h="";
-  if(tab=="g"){STAGES.forEach((s,i)=>{h+=`<h3 class="st">${s}</h3>`;D.forEach((d,k)=>{if(d[0]==i)h+=item("g"+k,d[1],15)})})}
-  else if(tab=="v")h=V.map((s,k)=>item("v"+k,"Từ vựng "+(k+1)+" · "+s[0],15)).join("");
-  else h=R.map((r,k)=>item("r"+k,r.title,r.q.length)).join("");
-  $("view").innerHTML=h;
-  document.querySelectorAll(".item").forEach(b=>b.onclick=()=>{cur=b.dataset.id;step=0;res=[];render()});
+function home(){
+  const cloud=`<svg viewBox="0 0 64 64"><g fill="#fff" stroke="#d9b8c4" stroke-width="1.5"><circle cx="23" cy="37" r="10"/><circle cx="35" cy="29" r="13"/><circle cx="46" cy="38" r="9"/><rect x="21" y="37" width="26" height="10" rx="5"/></g><circle cx="30" cy="39" r="1.8" fill="#8a6b78"/><circle cx="40" cy="39" r="1.8" fill="#8a6b78"/><path d="M32 43q3 3 6 0" stroke="#8a6b78" stroke-width="1.6" fill="none"/></svg>`;
+  const F=[["v","🍓","Từ vựng","Học từ theo từng bài của giáo trình."],["g","🧩","Ngữ pháp","23 điểm chia theo cấp độ."],["r","📖","Đọc hiểu","11 chủ đề, đọc đoạn ngắn rồi trả lời."],["p","🌱","Tiến độ","Xem điểm và cấp độ của bạn."]];
+  $("view").innerHTML=`<div class="hero"><div><h2>Hành trình HSK 5<br><span>bắt đầu từ đây!</span></h2><p>Học từ vựng, nắm ngữ pháp và đọc hiểu mỗi ngày một chút.</p><button class="pri" data-go="v">Bắt đầu học</button></div>
+  <div class="stack"><div class="bub">Hôm nay học vui nhé ✨</div>${cloud}<div style="background:var(--g1);width:200px">HỌC</div><div style="background:var(--g2);width:230px">LUYỆN</div><div style="background:var(--g3);width:260px">TIẾN BỘ</div></div></div>
+  <div class="feats">${F.map(f=>`<div class="card feat"><div class="ic">${f[1]}</div><h3>${f[2]}</h3><p>${f[3]}</p><button class="sec" data-go="${f[0]}">Khám phá</button></div>`).join("")}</div>
+  <div class="card"><div class="corner"><div class="av" id="av">🥚</div><div><h2>Góc học của bạn</h2><div class="lv"><span id="lv"></span><span id="xp"></span></div><div class="bar"><i id="xpbar" style="width:0"></i></div></div></div>
+  <div class="quote"><span>💬</span><div><b id="qt"></b><small id="qa"></small></div><button id="qn" type="button" aria-label="Câu khác">↻</button></div></div>`;
+}
+function gram(){
+  const C=["#d9a0b2","#c48fa3","#a98c9d","#8d8791"];
+  $("view").innerHTML=`<h2 class="pg">Ngữ pháp theo cấp độ</h2><p class="sub">Mỗi điểm gồm bài học ngắn và 15 câu luyện tập.</p><div class="levels">${STAGES.map((s,i)=>`<div class="lvcol"><h3 style="--c:${C[i]}">${s}</h3>${D.map((d,k)=>d[0]==i?item("g"+k,d[1],"",15):"").join("")}</div>`).join("")}</div>`;
+}
+function vocab(){
+  $("view").innerHTML=`<h2 class="pg">Từ vựng theo bài</h2><p class="sub">Các bài 51–70 của giáo trình HSK 5. Mỗi bài có bảng từ và 15 câu luyện tập (mỗi lần làm là một bộ câu mới).</p><div class="grid">${U.map((w,k)=>item("v"+k,vt(w),w.n?w.vi+" · "+w.w.length+" từ":w.vi+" · "+w.w.length+" từ",15)).join("")}</div>`;
+}
+function reading(){
+  $("view").innerHTML=`<h2 class="pg">Đọc hiểu theo chủ đề</h2><p class="sub">Mỗi chủ đề gồm nhiều đoạn đọc ngắn kèm câu hỏi.</p><div class="grid">${R.map((r,k)=>item("r"+k,r[0],r[1]+" · "+r[2].length+" bài",r[2].length)).join("")}</div>`;
+}
+function prog(){
+  const xp=Object.keys(st.sc).length,n=Object.keys(st.fin).length;
+  const nm=id=>id[0]=="g"?D[+id.slice(1)][1]:id[0]=="v"?vt(U[+id.slice(1)]):R[+id.slice(1)][0];
+  $("view").innerHTML=`<h2 class="pg">Tiến độ của bạn</h2><div class="stats"><div class="card"><b>${1+Math.floor(xp/20)}</b>Cấp độ</div><div class="card"><b>${xp}</b>Điểm</div><div class="card"><b>${n}</b>Bài đã làm</div></div><div class="card">${n?Object.keys(st.fin).map(id=>`<div>${{g:"🧩",v:"🍓",r:"📖"}[id[0]]} ${nm(id)}: <b>${st.fin[id]}</b></div>`).join(""):"Bạn chưa làm bài nào. Hãy bắt đầu ở thẻ Từ vựng nhé!"}</div><p style="text-align:center"><button class="sec" id="rs">Xóa tiến độ</button></p>`;
+  $("rs").onclick=()=>{if(confirm("Xóa toàn bộ tiến độ đã lưu?")){st={sc:{},fin:{}};save();render()}};
 }
 
 // ---------- Bài học và luyện tập ----------
@@ -178,7 +202,7 @@ function lesson(){
   if(step<P)h+=u.pages[step];
   else if(step<P+N){
     const i=step-P,q=u.qs[i],t=q[0];
-    h+=`${u.ctx||""}<p class="q">Câu ${i+1}/${N}. ${q[1]}</p><div id="area">`;
+    h+=`${q[4]?`<div class="pass">${q[4]}</div>`:""}<p class="q">Câu ${i+1}/${N}. ${q[1]}</p><div id="area">`;
     if(t=="c")h+=`<div id="o"></div>`;
     if(t=="f")h+=`<div class="fill"><input id="in" autocomplete="off" aria-label="Đáp án"><button class="pri" id="chk">Kiểm tra</button></div>`;
     if(t=="r")h+=`<div class="ans zh" id="aw"></div><div class="chips zh" id="pool"></div><p><button class="pri" id="chk">Kiểm tra</button> <button class="sec" id="clr">Làm lại</button></p>`;
@@ -224,8 +248,7 @@ function drill(i,q){
     $("clr").onclick=()=>{pool=sh(q[2].map(w=>[w]));as=[];dr()};
   }
 }
-$("qn").onclick=quote;
-quote();render();
+render();
 </script>
 </body>
 </html>

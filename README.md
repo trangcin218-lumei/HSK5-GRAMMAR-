@@ -1,4 +1,3 @@
-# Mimi HSK 5
+# HSK5 Corner
 
-Website tự học HSK 5: ngữ pháp, từ vựng và đọc hiểu, giao diện màu hồng.
-Tiến độ học được lưu trên trình duyệt của bạn.
+Website tự học HSK 5: từ vựng theo bài, ngữ pháp theo cấp độ và đọc hiểu theo chủ đề.
